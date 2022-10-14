@@ -17,14 +17,6 @@ const router = express.Router();
 // It only runs when id is present in the URL
 router.param('id', checkID);
 
-// Create a checkBody middleware
-
-// Check if body contains the name and price property
-
-// If not, send back 400 (bad request)
-
-// Add it to the post handler stack
-
 router
   .route('/')
   .get(getAllTours)
